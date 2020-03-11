@@ -1,0 +1,21 @@
+
+server:
+  port: 7777
+
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root@pxf
+    url: jdbc:mysql://localhost:3306/c-cloud?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    jpa:
+      show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
