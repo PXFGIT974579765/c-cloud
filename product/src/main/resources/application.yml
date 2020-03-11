@@ -5,6 +5,9 @@ server:
 spring:
   application:
     name: product
+  redis:
+    host: 127.0.0.1
+    port: 6379
     # \u6682\u4E14\u4E0D\u4F7F\u7528druid\u7B49\u6570\u636E\u5E93\u8FDE\u63A5\u6C60\uFF0C\u4E5F\u6682\u4E14\u4E0D\u7528\u914D\u7F6E\u591A\u6570\u636E\u6E90
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
