@@ -1,0 +1,23 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+      defaultZone: http://localhost:${server.port}}/eureka/
+    register-with-eureka: false
+  server:
+    enable-self-preservation: false            #\u751F\u4EA7\u73AF\u5883\u4E00\u5B9A\u8981\u6539\u6210true
+
+# \u672C\u9879\u76EE\u6682\u4E14\u4E0D\u52A0\u5B89\u5168\u7EA7\u522B
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: c-cloud
+#    password: 123456
