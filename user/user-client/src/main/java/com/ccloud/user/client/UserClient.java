@@ -7,6 +7,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author ：腾云先生
@@ -24,6 +25,9 @@ public interface UserClient {
     @PostMapping("/login")
     public ResultVo login(@RequestBody LoginParam loginParam);
 
+    @RequestMapping("/auth")
+    public ResultVo auth();
+
 
     @Component
     @Slf4j
@@ -32,6 +36,12 @@ public interface UserClient {
 
         @Override
         public ResultVo login(LoginParam loginParam) {
+            log.info("用户中心未正常工作");
+            return null;
+        }
+
+        @Override
+        public ResultVo auth() {
             log.info("用户中心未正常工作");
             return null;
         }

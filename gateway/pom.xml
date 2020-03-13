@@ -17,6 +17,8 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <user-client.version>0.0.1-SNAPSHOT</user-client.version>
+        <user-common.version>0.0.1-SNAPSHOT</user-common.version>
     </properties>
 
     <dependencies>
@@ -32,6 +34,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
+
+        <!--lombok  start-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--lombok end -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -55,6 +64,18 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <!--redis end-->
+
+        <dependency>
+            <groupId>com.ccloud</groupId>
+            <artifactId>user-client</artifactId>
+            <version>${user-client.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ccloud</groupId>
+            <artifactId>user-common</artifactId>
+            <version>${user-common.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

@@ -18,6 +18,7 @@ public enum ResultEnum {
     PHONE_EMPTY(1003, "电话为空"),
 
     PWD_EMPTY(1004, "密码为空"),
+
     ;
     private Integer code;
 
