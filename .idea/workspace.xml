@@ -2,10 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1134ca7b-3da0-40d5-b614-9a62957e61f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dataobject/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dataobject/OrderMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/CodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/PayStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/ResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/ParamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/form/OrderForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderMasterRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/serializer/Date2LongSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/BeanValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/EnumUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/KeyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/ResultVOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/vo/ResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/dataobject/ProductLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductLockRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/product-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/项目概述.docx" beforeDir="false" afterPath="$PROJECT_DIR$/项目概述.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
@@ -28,19 +58,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="145">
+              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dto/OrderDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+            <state relative-caret-position="-994">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,10 +79,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-client/src/main/java/com/ccloud/user/client/UserClient.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/form/OrderForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state relative-caret-position="498">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,95 +91,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/HeaderConstant.java">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="395">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/util/HeaderUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/RedisConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/RateLimitFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/config/CorsConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="381">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -157,26 +132,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="317">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+            <state relative-caret-position="210">
+              <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="295">
+              <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductLockRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.8.RELEASE/spring-data-jpa-2.1.8.RELEASE.jar!/org/springframework/data/jpa/repository/Modifying.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/dataobject/ProductLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,33 +214,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/GatewayApplication.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/KeyUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="425">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/HeaderUtil.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="250">
+              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,19 +235,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/enums/ResultEnum.java">
+        <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/ResultVOUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="225">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+        <entry file="file://$PROJECT_DIR$/order/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="24" />
+            <state relative-caret-position="1400">
+              <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -257,42 +272,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/product/product-client/pom.xml" />
-        <option value="$PROJECT_DIR$/product/pom.xml" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/vo/ProductInfoVo.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/vo/ProductVo.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductInfoRepository.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/dataobject/UserInfo.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/repository/UserInfoRepository.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/params/LoginParam.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/vo/ResultVo.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/util/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/util/KeyUtil.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/util/MD5Util.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/vo/UserVo.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/user/src/main/java/com/ccloud/user/vo/UserVo.java" />
-        <option value="$PROJECT_DIR$/user/user-common/pom.xml" />
-        <option value="$PROJECT_DIR$/user/pom.xml" />
-        <option value="$PROJECT_DIR$/user/user-client/user-client.iml" />
-        <option value="$PROJECT_DIR$/user/user-client/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/config/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/vo/ResultVo.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/handler/ExceptionHandle.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/exception/RateLimitExcetion.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/RateLimitFilter.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/constant/HeaderConstant.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/HeaderUtil.java" />
-        <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/RedisConstant.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/HeaderConstant.java" />
@@ -305,9 +287,42 @@
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/serializer/Date2LongSerializer.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/dataobject/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/dto/OrderDTO.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/dataobject/OrderMaster.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/OrderStatusEnum.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/CodeEnum.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/PayStatusEnum.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/EnumUtil.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dto/OrderDTO.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dataobject/OrderMaster.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderMasterRepository.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderDetailRepository.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/AppException.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/vo/ResultVo.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/ParamException.java" />
+        <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/BeanValidator.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/KeyUtil.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/ResultVOUtil.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product/pom.xml" />
         <option value="$PROJECT_DIR$/product/product-server/pom.xml" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductLockRepository.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/dataobject/ProductLock.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/form/OrderForm.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" />
       </list>
     </option>
   </component>
@@ -363,25 +378,67 @@
           <expand>
             <path>
               <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-client" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-client" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -463,6 +520,151 @@
               <item name="product" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -476,7 +678,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584162886322" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584172659485" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -486,6 +688,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ccloud.order" />
       <recent name="com.ccloud.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -493,11 +696,11 @@
       <recent name="E:\workplaceIdea\c-cloud\eureka" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ccloud.user.util" />
-      <recent name="com.ccloud.user.constant" />
-      <recent name="com.ccloud.gateway.vo" />
-      <recent name="com.ccloud.gateway.util" />
-      <recent name="com.ccloud.util" />
+      <recent name="com.ccloud.product.dataobject" />
+      <recent name="com.ccloud.product.repository" />
+      <recent name="com.ccloud.order.util" />
+      <recent name="com.ccloud.order.exception" />
+      <recent name="com.ccloud.order.vo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workplaceIdea\c-cloud\user" />
@@ -517,7 +720,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -602,12 +805,12 @@
       <updated>1583932627328</updated>
       <workItem from="1583932636191" duration="12020000" />
       <workItem from="1584016140510" duration="14167000" />
-      <workItem from="1584104320805" duration="12134000" />
+      <workItem from="1584104320805" duration="21109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38321000" />
+    <option name="totallyTimeSpent" value="47296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1933" height="1050" extended-state="0" />
@@ -624,7 +827,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969433" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39628822" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29257643" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -664,255 +867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/ProductApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/repository/UserInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/util/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/util/KeyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/ccloud/user/vo/ResultVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/user-server.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/user-common.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="14" selection-start-line="16" selection-start-column="2" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-client/user-client.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="21" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/ccloud/user/params/LoginParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/util/ResultVOUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/vo/ResultVo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/ResultVOUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/handler/ExceptionHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/http/HttpStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/context/RequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/constant/HeaderConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/HeaderUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/RedisConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -986,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1043,27 +990,286 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="385">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/serializer/Date2LongSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="453">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dataobject/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/CodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/OrderStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/PayStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/EnumUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dataobject/OrderMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderMasterRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderDetailRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/AppException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/vo/ResultVo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/exception/ParamException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/BeanValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/KeyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/util/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/dataobject/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/dataobject/ProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.8.RELEASE/spring-data-jpa-2.1.8.RELEASE.jar!/org/springframework/data/jpa/repository/Modifying.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductLockRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/dataobject/ProductLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/dto/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/form/OrderForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

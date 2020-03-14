@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <product-common.version>0.0.1-SNAPSHOT</product-common.version>
+        <order.version>0.0.1-SNAPSHOT</order.version>
     </properties>
 
     <dependencies>
@@ -52,6 +53,12 @@
                 <groupId>com.ccloud</groupId>
                 <artifactId>product-common</artifactId>
                 <version>${product-common.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ccloud</groupId>
+                <artifactId>order</artifactId>
+                <version>${order.version}</version>
             </dependency>
 
         </dependencies>

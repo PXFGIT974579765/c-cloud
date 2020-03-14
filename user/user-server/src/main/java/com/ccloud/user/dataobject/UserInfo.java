@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.math.BigDecimal;
 
 /**
  * @author ：腾云先生
@@ -24,5 +25,8 @@ public class UserInfo {
     private String password;
 
     private String phone;
+
+    /** 用户余额 */
+    private BigDecimal deposit;
 
 }

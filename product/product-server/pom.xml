@@ -60,6 +60,11 @@
             <groupId>com.ccloud</groupId>
             <artifactId>product-common</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.ccloud</groupId>
+            <artifactId>order</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

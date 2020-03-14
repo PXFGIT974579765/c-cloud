@@ -23,4 +23,5 @@ public interface ProductService {
      */
     List<ProductInfo> findList(List<String> productIdList);
 
+
 }
