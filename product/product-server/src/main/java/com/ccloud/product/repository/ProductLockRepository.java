@@ -16,10 +16,15 @@ public interface ProductLockRepository extends JpaRepository<ProductLock, Intege
     /**
      * 功能描述:
      * // 让数据立刻写到数据库，防止多实例高并发时会出现问题
+     *
      * @Author: 腾云先生
      * @Date: 2020/03/14 15:36
      */
     @Modifying(clearAutomatically = true)
     @Query(value = "insert ignore into product_lock(product_id,phone) values(:#{#lock.productId},:#{#lock.phone})", nativeQuery = true)
     int savetIngore(ProductLock lock);
+
+    @Modifying
+    @Query(value = "delete from product_lock  WHERE product_id = ?1 and phone = ?2", nativeQuery = true)
+    int unLockProduct(String productId, String phone);
 }

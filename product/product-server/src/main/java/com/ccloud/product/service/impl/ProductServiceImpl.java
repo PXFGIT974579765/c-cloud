@@ -33,7 +33,7 @@ public class ProductServiceImpl implements ProductService {
     private ProductInfoRepository repository;
 
     @Autowired
-    private ProductLockRepository lockRepository;
+    private ProductLockRepository productLockRepository;
 
     @Autowired
     private JmsTemplate jmsTemplate;
@@ -69,7 +69,7 @@ public class ProductServiceImpl implements ProductService {
         // if(lock.tryLock()){
         //    // something
         // }
-        int lockCount = lockRepository.savetIngore(productLock);
+        int lockCount = productLockRepository.savetIngore(productLock);
 
         if (lockCount == 0) {
             orderDTO.setOrderStatus(OrderStatusEnum.PRODUCT_LOCK_FAIL.getCode());
@@ -80,6 +80,30 @@ public class ProductServiceImpl implements ProductService {
             // 锁商品成功，发送消息到锁商品成功队列，order服务进行创建订单
             jmsTemplate.convertAndSend(QueueNameConstant.ORDER_LOCKED, orderDTO);
         }
+    }
+
+
+    /**
+     * 功能描述:
+     *  触发解锁商品的情况
+     *1. 扣费失败，需要解锁商品
+     *2. 订单超时，如果存在商品被锁就解锁
+     * 这时候，都已经在OrderDTO里设置了失败的原因，所以这里就不再设置原因。
+     * @Author: 腾云先生
+     * @Date: 2020/03/14 22:22
+     */
+    @Override
+    @Transactional
+    @JmsListener(destination = QueueNameConstant.ORDER_ERROR, containerFactory = "msgFactory")
+    public void handleError(OrderDTO dto) {
+        log.info("Get order error for ticket unlock:{}", dto);
+
+        // 解锁商品
+        int count = productLockRepository.unLockProduct(dto.getProductId(), dto.getPhone());
+        if (count == 0) {
+            log.info("product already unlocked:", dto);
+        }
+        jmsTemplate.convertAndSend(QueueNameConstant.ORDER_FAIL, dto);
     }
 
 }

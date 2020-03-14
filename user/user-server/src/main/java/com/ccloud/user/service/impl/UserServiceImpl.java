@@ -62,7 +62,7 @@ public class UserServiceImpl implements UserService {
                 log.info("No enough deposit, need amount:{}", orderDTO.getOrderAmount());
                 orderDTO.setOrderStatus(OrderStatusEnum.NOT_ENOUGH_DEPOSIT.getCode());
                 // 账户余额不足，扣费失败，发送消息到买票出错队列
-                jmsTemplate.convertAndSend(QueueNameConstant.ORDER_TICKER_ERROR, orderDTO);
+                jmsTemplate.convertAndSend(QueueNameConstant.ORDER_ERROR, orderDTO);
                 return;
             }
 

@@ -21,5 +21,10 @@ public interface OrderService {
      */
     void finishOrder(OrderDTO orderDTO);
 
+    /**
+     * 处理订单.
+     */
+    void handleFailed(OrderDTO orderDTO);
+
 
 }

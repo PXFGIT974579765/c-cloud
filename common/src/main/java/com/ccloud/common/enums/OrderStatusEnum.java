@@ -12,11 +12,13 @@ import lombok.Getter;
 public enum OrderStatusEnum implements CodeEnum {
     NEW(0, "新订单"),
     FINISH(1, "完结"),
+    FAIL(-1, "失败"),
     CANCEL(2, "已取消"),
     PRODUCT_LOCK_FAIL(3, "锁商品失败"),
     PRODUCT_LOCKED(4, "锁商品成功"),
     NOT_ENOUGH_DEPOSIT(5,"账户余额不足"),
-    PAID(6,"已支付");
+    PAID(6,"已支付"),
+    TIME_OUT(9,"订单超时");
 
     private Integer code;
     private String message;

@@ -43,6 +43,11 @@ public class OrderMaster {
      */
     private String phone;
 
+    /*
+    * 原因
+     */
+    private String reason;
+
     /**
      * 订单总金额.
      */

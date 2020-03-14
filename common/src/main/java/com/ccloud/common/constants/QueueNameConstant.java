@@ -16,7 +16,7 @@ public interface QueueNameConstant {
 
     String ORDER_PAY = "order:pay";
 
-    String ORDER_TICKER_ERROR = "order:ticket_error";
+    String ORDER_ERROR = "order:product_unlock";
 
     String ORDER_DO_FINISH = "order:do_finish";
 }

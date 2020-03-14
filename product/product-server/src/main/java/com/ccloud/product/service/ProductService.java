@@ -1,5 +1,6 @@
 package com.ccloud.product.service;
 
+import com.ccloud.common.dto.OrderDTO;
 import com.ccloud.product.dataobject.ProductInfo;
 
 import java.util.List;
@@ -22,6 +23,11 @@ public interface ProductService {
      * 通过商品id集合获取商品信息
      */
     List<ProductInfo> findList(List<String> productIdList);
+
+    /**
+     * 触发解锁商品的情况
+     */
+    void handleError(OrderDTO dto);
 
 
 }
