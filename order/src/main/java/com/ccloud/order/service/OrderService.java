@@ -1,6 +1,7 @@
 package com.ccloud.order.service;
 
-import com.ccloud.order.dto.OrderDTO;
+
+import com.ccloud.common.dto.OrderDTO;
 
 /**
  * @author ：腾云先生
@@ -13,12 +14,12 @@ public interface OrderService {
     /**
      * 创建订单.
      */
-    OrderDTO create(OrderDTO orderDTO);
-
+    void create(OrderDTO orderDTO);
 
     /**
-     * 完结订单.
+     * 完成订单.
      */
-    OrderDTO finish(String orderId);
+    void finishOrder(OrderDTO orderDTO);
+
 
 }

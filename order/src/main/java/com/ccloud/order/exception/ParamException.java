@@ -1,5 +1,8 @@
 package com.ccloud.order.exception;
 
+import lombok.Data;
+
+@Data
 public class ParamException extends RuntimeException {
     public ParamException() {
         super();

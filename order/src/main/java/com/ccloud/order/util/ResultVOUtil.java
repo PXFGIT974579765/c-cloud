@@ -1,6 +1,7 @@
 package com.ccloud.order.util;
 
 
+import com.ccloud.order.enums.ResultEnum;
 import com.ccloud.order.vo.ResultVo;
 
 /**
@@ -27,6 +28,13 @@ public class ResultVOUtil {
         ResultVo resultVo = new ResultVo();
         resultVo.setCode(code);
         resultVo.setMessage(msg);
+        return resultVo;
+    }
+
+    public static ResultVo error(ResultEnum resultEnum) {
+        ResultVo resultVo = new ResultVo();
+        resultVo.setCode(resultEnum.getCode());
+        resultVo.setMessage(resultEnum.getMessage());
         return resultVo;
     }
 }

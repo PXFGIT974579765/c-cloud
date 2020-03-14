@@ -1,17 +1,16 @@
-package com.ccloud.order.dto;
+package com.ccloud.common.dto;
 
-import com.ccloud.order.dataobject.OrderDetail;
-import com.ccloud.order.enums.OrderStatusEnum;
-import com.ccloud.order.enums.PayStatusEnum;
-import com.ccloud.order.serializer.Date2LongSerializer;
-import com.ccloud.order.util.EnumUtil;
+
+import com.ccloud.common.enums.OrderStatusEnum;
+import com.ccloud.common.enums.PayStatusEnum;
+import com.ccloud.common.serializer.Date2LongSerializer;
+import com.ccloud.common.util.EnumUtil;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author ：腾云先生
@@ -29,22 +28,21 @@ public class OrderDTO {
     /**
      * 买家名字.
      */
-    private String buyerName;
+    private String username;
+    /**
+     * 买家id
+     */
+    private String userId;
 
     /**
      * 买家电话.
      */
-    private String buyerPhone;
+    private String phone;
 
     /**
-     * 买家地址.
+     * 商品id.
      */
-    private String buyerAddress;
-
-    /**
-     * 买家Openid.
-     */
-    private String buyerOpenid;
+    private String productId;
 
     /**
      * 订单总金额.
@@ -72,8 +70,6 @@ public class OrderDTO {
      */
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
-
-    List<OrderDetail> orderDetailList;
 
     @JsonIgnore
     public OrderStatusEnum getOrderStatusEnum() {

@@ -12,7 +12,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Data
 public class OrderForm {
 
-    @NotEmpty(message = "买家姓名必填")
+    @NotEmpty(message = "买家id必填")
     private String userId;
 
     @NotEmpty(message = "手机号必填")
@@ -22,5 +22,4 @@ public class OrderForm {
     @NotEmpty(message = "购物车不能为空")
     private String productId;
 
-    private String status;
 }

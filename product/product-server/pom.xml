@@ -63,7 +63,7 @@
 
         <dependency>
             <groupId>com.ccloud</groupId>
-            <artifactId>order</artifactId>
+            <artifactId>common</artifactId>
         </dependency>
     </dependencies>
 

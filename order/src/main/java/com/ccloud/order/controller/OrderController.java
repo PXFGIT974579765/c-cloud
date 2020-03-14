@@ -1,19 +1,24 @@
 package com.ccloud.order.controller;
 
-import com.ccloud.order.dto.OrderDTO;
+import com.ccloud.common.constants.QueueNameConstant;
+import com.ccloud.common.dto.OrderDTO;
+import com.ccloud.order.enums.ResultEnum;
 import com.ccloud.order.form.OrderForm;
 import com.ccloud.order.service.OrderService;
+import com.ccloud.order.util.BeanValidator;
+import com.ccloud.order.util.KeyUtil;
 import com.ccloud.order.util.ResultVOUtil;
 import com.ccloud.order.vo.ResultVo;
+import com.ccloud.product.client.ProductClient;
+import com.ccloud.product.io.ProductInfoOutput;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.util.CollectionUtils;
+import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,36 +36,37 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
+    @Autowired
+    private ProductClient productClient;
+
     /**
      * 1、下单接口
      */
-    @RequestMapping("create")
-    public ResultVo<Map<String, String>> create(@Valid OrderForm orderForm,
-                                                BindingResult bindingResult) throws InterruptedException {
-//        if (bindingResult.hasErrors()) {
-//            log.error("【创建订单】参数不正确，orderForm={}", orderForm);
-//            throw new AppException(ResultEnum.PARAM_ERROR.getCode(), bindingResult.getFieldError().getDefaultMessage());
-//        }
-//
-//        OrderDTO orderDTO = OrderForm2OrderDTOConverter.conver(orderForm);
-//        if (CollectionUtils.isEmpty(orderDTO.getOrderDetailList())) {
-//            log.error("【创建订单】购物车不能为空");
-//            throw new AppException(ResultEnum.CART_EMPTY);
-//        }
-//
-//        // 等老板提出优化速度时
-//        // 就将此睡眠代码去掉
-//        // Thread.sleep(2000);
-//
-//        OrderDTO createResult = orderService.create(orderDTO);
-//        Map<String, String> map = new HashMap<>();
-//        map.put("orderId", createResult.getOrderId());
+    @PostMapping("create")
+    public ResultVo<Map<String, String>> create(@RequestBody OrderForm orderForm) throws InterruptedException {
+        BeanValidator.check(orderForm);
 
-        return ResultVOUtil.success();
+        List<ProductInfoOutput> productList = productClient.listForOrder(Arrays.asList(orderForm.getProductId()));
+
+        // 商品不存在则返回
+        if(CollectionUtils.isEmpty(productList)) {
+            return ResultVOUtil.error(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+        OrderDTO orderDTO = new OrderDTO();
+
+        // 此处生成全局唯一uuid,避免后续的消息重复消费，如果对全局id的要求很高，可以使用 ip+实例id+线程id+随机数来保证唯一性
+        // 此处要求不是很高，所以用uuid
+        orderDTO.setOrderId(KeyUtil.uuid32());
+        orderDTO.setProductId(orderForm.getProductId());
+        orderDTO.setPhone(orderForm.getPhone());
+        orderDTO.setUserId(orderForm.getUserId());
+
+        // 新订单队列，product服务锁商品
+        jmsTemplate.convertAndSend(QueueNameConstant.ORDER_NEW, orderDTO);
+        return ResultVOUtil.success(orderDTO.getOrderId());
     }
 
-    @PostMapping("/finish")
-    public ResultVo<OrderDTO> finish(@RequestParam("orderId") String orderId) {
-        return ResultVOUtil.success(orderService.finish(orderId));
-    }
 }

@@ -65,6 +65,18 @@
         </dependency>
         <!--json end-->
 
+        <dependency>
+            <groupId>com.ccloud</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ccloud</groupId>
+            <artifactId>product-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!--tools-->
         <dependency>
             <groupId>commons-collections</groupId>

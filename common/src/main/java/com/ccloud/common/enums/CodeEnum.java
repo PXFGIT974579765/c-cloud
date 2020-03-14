@@ -1,4 +1,4 @@
-package com.ccloud.order.enums;
+package com.ccloud.common.enums;
 
 /**
  * @author ：腾云先生

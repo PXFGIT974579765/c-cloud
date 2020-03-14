@@ -1,7 +1,7 @@
 package com.ccloud.order.dataobject;
 
-import com.ccloud.order.enums.OrderStatusEnum;
-import com.ccloud.order.enums.PayStatusEnum;
+import com.ccloud.common.enums.OrderStatusEnum;
+import com.ccloud.common.enums.PayStatusEnum;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -28,24 +28,20 @@ public class OrderMaster {
     private String orderId;
 
     /**
-     * 买家名字.
+     * 买家id.
      */
-    private String buyerName;
+    private String userId;
+
+    /**
+     * 商品id.
+     */
+    private String productId;
+
 
     /**
      * 买家电话.
      */
-    private String buyerPhone;
-
-    /**
-     * 买家地址.
-     */
-    private String buyerAddress;
-
-    /**
-     * 买家Openid.
-     */
-    private String buyerOpenid;
+    private String phone;
 
     /**
      * 订单总金额.

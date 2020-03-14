@@ -13,15 +13,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 zuul:
-  sensitive-headers:
-#  routes:
-#    myProduct:
-#      path: /myProduct/**
-#      serviceId: product
-#      sensitiveHeaders:                  #设置为空，过滤掉cookie拦截
-#  ignored-patterns:
-#    - /**/product/listForOrder
-#    - /product/product/listForOrder
+  routes:
+    user:
+      path: /user/**
+      sensitiveHeaders:
+
 
 logging:
   level:

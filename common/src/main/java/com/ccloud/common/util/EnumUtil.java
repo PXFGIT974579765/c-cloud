@@ -1,6 +1,6 @@
-package com.ccloud.order.util;
+package com.ccloud.common.util;
 
-import com.ccloud.order.enums.CodeEnum;
+import com.ccloud.common.enums.CodeEnum;
 
 /**
  * @author ：腾云先生

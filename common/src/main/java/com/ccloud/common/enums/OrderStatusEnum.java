@@ -1,4 +1,4 @@
-package com.ccloud.order.enums;
+package com.ccloud.common.enums;
 
 import lombok.Getter;
 
@@ -12,7 +12,11 @@ import lombok.Getter;
 public enum OrderStatusEnum implements CodeEnum {
     NEW(0, "新订单"),
     FINISH(1, "完结"),
-    CANCEL(2, "已取消");
+    CANCEL(2, "已取消"),
+    PRODUCT_LOCK_FAIL(3, "锁商品失败"),
+    PRODUCT_LOCKED(4, "锁商品成功"),
+    NOT_ENOUGH_DEPOSIT(5,"账户余额不足"),
+    PAID(6,"已支付");
 
     private Integer code;
     private String message;

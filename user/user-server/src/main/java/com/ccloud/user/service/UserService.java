@@ -1,5 +1,6 @@
 package com.ccloud.user.service;
 
+import com.ccloud.common.dto.OrderDTO;
 import com.ccloud.user.dataobject.UserInfo;
 
 /**
@@ -16,4 +17,6 @@ public interface UserService {
      * @return
      */
     UserInfo findByPhone(String phone);
+
+    void handleOrderPay(OrderDTO orderDTO);
 }
