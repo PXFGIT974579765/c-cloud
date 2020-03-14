@@ -44,6 +44,11 @@
         </dependency>
         <!--mysql end-->
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
         <!--redis start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

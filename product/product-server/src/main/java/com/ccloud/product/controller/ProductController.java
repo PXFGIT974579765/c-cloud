@@ -75,7 +75,6 @@ public class ProductController {
     /**
      * 功能描述:
      * 根据商品id获取商品列表（给订单服务用）
-     *
      * @Author: 腾云先生
      * @Date: 2020/03/12 22:50
      */

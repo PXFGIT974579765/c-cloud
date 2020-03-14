@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1134ca7b-3da0-40d5-b614-9a62957e61f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/constant/HeaderConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/RateLimitFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/HeaderUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/util/ResultVOUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/vo/ResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/HeaderConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/constant/RedisConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/util/HeaderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-client/src/main/java/com/ccloud/user/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-client/src/main/java/com/ccloud/user/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目概述.docx" beforeDir="false" afterPath="$PROJECT_DIR$/项目概述.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
     <ignored path="$PROJECT_DIR$/user/target/" />
@@ -42,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/http/HttpStatus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/user-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,15 +110,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/context/RequestContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
@@ -155,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,14 +130,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/config/CorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="600">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -191,7 +188,7 @@
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/GatewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -218,15 +215,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/constant/HeaderConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -269,13 +257,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/product/product-client/src/main/java/com/ccloud/product/client/ProductClient.java" />
         <option value="$PROJECT_DIR$/product/product-client/pom.xml" />
-        <option value="$PROJECT_DIR$/product/product-server/pom.xml" />
         <option value="$PROJECT_DIR$/product/pom.xml" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/vo/ProductInfoVo.java" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/vo/ProductVo.java" />
-        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/repository/ProductInfoRepository.java" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java" />
@@ -320,6 +305,9 @@
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/product/product-server/pom.xml" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" />
       </list>
     </option>
   </component>
@@ -375,7 +363,105 @@
           <expand>
             <path>
               <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccloud" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,7 +476,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584114325596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584162886322" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -403,6 +489,7 @@
       <recent name="com.ccloud.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workplaceIdea\c-cloud\product\product-server\src\main\java\com\ccloud\product\config" />
       <recent name="E:\workplaceIdea\c-cloud\eureka" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -515,12 +602,12 @@
       <updated>1583932627328</updated>
       <workItem from="1583932636191" duration="12020000" />
       <workItem from="1584016140510" duration="14167000" />
-      <workItem from="1584104320805" duration="9812000" />
+      <workItem from="1584104320805" duration="12134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35999000" />
+    <option name="totallyTimeSpent" value="38321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1933" height="1050" extended-state="0" />
@@ -577,18 +664,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -603,16 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/enums/ResultEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -896,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/GatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -968,7 +1026,7 @@
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -977,11 +1035,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="600">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
         </state>
       </provider>
     </entry>
