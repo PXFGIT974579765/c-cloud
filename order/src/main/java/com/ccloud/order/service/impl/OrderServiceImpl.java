@@ -148,6 +148,17 @@ public class OrderServiceImpl implements OrderService {
         orderMasterRepository.save(orderMaster);
     }
 
+    /**
+     * 功能描述:
+     * 根据用户id查询订单
+     * @Author: 腾云先生
+     * @Date: 2020/03/15 22:53
+     */
+    @Override
+    public List<OrderMaster> findByUserId(String userId) {
+        return orderMasterRepository.findByUserId(userId);
+    }
+
 
     /**
      * 功能描述:

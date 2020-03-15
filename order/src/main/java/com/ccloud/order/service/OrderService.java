@@ -2,6 +2,9 @@ package com.ccloud.order.service;
 
 
 import com.ccloud.common.dto.OrderDTO;
+import com.ccloud.order.dataobject.OrderMaster;
+
+import java.util.List;
 
 /**
  * @author ：腾云先生
@@ -25,6 +28,11 @@ public interface OrderService {
      * 处理订单.
      */
     void handleFailed(OrderDTO orderDTO);
+
+    /**
+     * 根据用户id查询订单.
+     */
+    List<OrderMaster> findByUserId(String userId);
 
 
 }

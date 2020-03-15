@@ -69,4 +69,9 @@ public class OrderController {
         return ResultVOUtil.success(orderDTO.getOrderId());
     }
 
+    @GetMapping("/{userId}")
+    public ResultVo findByUserId(@PathVariable("userId") String userId) {
+        return ResultVOUtil.success(orderService.findByUserId(userId));
+    }
+
 }

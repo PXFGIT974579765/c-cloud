@@ -16,6 +16,8 @@ public interface OrderMasterRepository extends JpaRepository<OrderMaster, String
 
     OrderMaster findByOrderId(String orderId);
 
+    List<OrderMaster> findByUserId(String userId);
+
 
     List<OrderMaster> findAllByOrderStatusAndCreateTimeBefore(Integer status, ZonedDateTime checkTime);
 

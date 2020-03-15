@@ -26,7 +26,7 @@ public class JmsConfig {
 
     @Bean
     public ConnectionFactory connectionFactory() {
-        ConnectionFactory cf = new ActiveMQConnectionFactory("tcp://192.168.1.106:61616");
+        ConnectionFactory cf = new ActiveMQConnectionFactory("tcp://192.168.31.30:61616");
         // 事务同步 让消息数据源和数据库数据源进行事务同步
         TransactionAwareConnectionFactoryProxy proxy = new TransactionAwareConnectionFactoryProxy();
         proxy.setTargetConnectionFactory(cf);
