@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1134ca7b-3da0-40d5-b614-9a62957e61f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
     <ignored path="$PROJECT_DIR$/user/target/" />
@@ -40,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
@@ -127,6 +124,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="48" column="98" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -236,7 +242,6 @@
         <option value="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/constants/QueueNameConstant.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/controller/UserController.java" />
@@ -250,6 +255,7 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/OrderStatusEnum.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/ccloud/common/enums/PayStatusEnum.java" />
         <option value="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java" />
       </list>
     </option>
   </component>
@@ -1040,7 +1046,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584287231393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584287448926" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1082,7 +1088,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -1175,12 +1181,12 @@
       <workItem from="1583932636191" duration="12020000" />
       <workItem from="1584016140510" duration="14167000" />
       <workItem from="1584104320805" duration="49591000" />
-      <workItem from="1584269206006" duration="7504000" />
+      <workItem from="1584269206006" duration="7714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83282000" />
+    <option name="totallyTimeSpent" value="83492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1933" height="1050" extended-state="0" />
@@ -1497,13 +1503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/vo/UserVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1522,13 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-587">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -1678,6 +1670,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/BuyerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/ccloud/gateway/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="48" column="98" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
         </state>
       </provider>
     </entry>

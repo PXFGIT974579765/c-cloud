@@ -46,7 +46,7 @@ public class TokenFilter extends ZuulFilter {
         }
 
         HttpServletRequest request = requestContext.getRequest();
-        if (request.getRequestURI().contains("/user/login")) {
+        if (request.getRequestURI().contains("/user/login") || request.getRequestURI().contains("/product/list")) {
             return false;
         }
         return true;
