@@ -2,7 +2,6 @@ package com.ccloud.order.service;
 
 
 import com.ccloud.common.dto.OrderDTO;
-import com.ccloud.order.dataobject.OrderMaster;
 
 import java.util.List;
 
@@ -32,7 +31,7 @@ public interface OrderService {
     /**
      * 根据用户id查询订单.
      */
-    List<OrderMaster> findByUserId(String userId);
+    List<OrderDTO> findByUserId(String userId);
 
 
 }

@@ -27,5 +27,14 @@ public enum OrderStatusEnum implements CodeEnum {
         this.code = code;
         this.message = message;
     }
+
+    public static OrderStatusEnum getEnum(int value) {
+        for (OrderStatusEnum paymentTypeEnum : OrderStatusEnum.values()) {
+            if (value == paymentTypeEnum.getCode()) {
+                return paymentTypeEnum;
+            }
+        }
+        return null;
+    }
 }
 

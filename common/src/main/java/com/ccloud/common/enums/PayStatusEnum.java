@@ -20,4 +20,12 @@ public enum PayStatusEnum implements CodeEnum {
         this.code = code;
         this.message = message;
     }
+    public static PayStatusEnum getEnum(int value) {
+        for (PayStatusEnum paymentTypeEnum : PayStatusEnum.values()) {
+            if (value == paymentTypeEnum.getCode()) {
+                return paymentTypeEnum;
+            }
+        }
+        return null;
+    }
 }

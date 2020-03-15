@@ -17,6 +17,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
@@ -24,6 +25,7 @@ import java.math.BigInteger;
 import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author ：腾云先生
@@ -94,6 +96,7 @@ public class OrderServiceImpl implements OrderService {
 
         OrderMaster orderMaster = orderMasterRepository.findByOrderId(orderDTO.getOrderId());
         orderMaster.setOrderStatus(OrderStatusEnum.FINISH.getCode());
+        orderMaster.setPayStatus(PayStatusEnum.PAID.getCode());
         orderMasterRepository.save(orderMaster);
     }
 
@@ -155,8 +158,21 @@ public class OrderServiceImpl implements OrderService {
      * @Date: 2020/03/15 22:53
      */
     @Override
-    public List<OrderMaster> findByUserId(String userId) {
-        return orderMasterRepository.findByUserId(userId);
+    public List<OrderDTO> findByUserId(String userId) {
+
+        List<OrderMaster> orderMaster = orderMasterRepository.findByUserId(userId);
+        if(CollectionUtils.isEmpty(orderMaster)) {
+            return Arrays.asList();
+        }
+        List<OrderDTO> orderDTOS = orderMaster.stream().map(e -> {
+            OrderDTO orderDTO = new OrderDTO();
+            BeanUtils.copyProperties(e,orderDTO);
+            orderDTO.setOrderStatusStr(OrderStatusEnum.getEnum(orderDTO.getOrderStatus()).getMessage());
+            orderDTO.setPayStatusStr(PayStatusEnum.getEnum(orderDTO.getOrderStatus()).getMessage());
+            return orderDTO;
+        }).collect(Collectors.toList());
+
+        return orderDTOS;
     }
 
 

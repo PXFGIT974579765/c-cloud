@@ -1,11 +1,7 @@
 package com.ccloud.common.dto;
 
 
-import com.ccloud.common.enums.OrderStatusEnum;
-import com.ccloud.common.enums.PayStatusEnum;
 import com.ccloud.common.serializer.Date2LongSerializer;
-import com.ccloud.common.util.EnumUtil;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 
@@ -71,13 +67,12 @@ public class OrderDTO {
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
-    @JsonIgnore
-    public OrderStatusEnum getOrderStatusEnum() {
-        return EnumUtil.getByCode(orderStatus, OrderStatusEnum.class);
-    }
-
-    @JsonIgnore
-    public PayStatusEnum getPayStatusEnum() {
-        return EnumUtil.getByCode(payStatus, PayStatusEnum.class);
-    }
+    /**
+     * 订单状态文字说明.
+     */
+    private String orderStatusStr;
+    /**
+     * 订单支付状态文字说明.
+     */
+    private String payStatusStr;
 }
