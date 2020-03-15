@@ -1,5 +1,7 @@
 server:
   port: 1234
+  servlet:
+    context-path: /api-gateway
 spring:
   application:
     name: gateway

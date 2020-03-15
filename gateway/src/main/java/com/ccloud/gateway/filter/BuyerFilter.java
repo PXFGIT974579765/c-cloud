@@ -42,7 +42,7 @@ public class BuyerFilter extends ZuulFilter {
     public boolean shouldFilter() {
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletRequest request = requestContext.getRequest();
-        if ("/order/order/create".equals(request.getRequestURI())) {
+        if (request.getRequestURI().contains("/order/create")) {
             return true;
         }
         return false;

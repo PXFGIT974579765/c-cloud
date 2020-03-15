@@ -21,6 +21,8 @@ public class UserVo implements Serializable {
 
     private String phone;
 
+    private String token;
+
     public static UserVo adapt(UserInfo userInfo){
         UserVo userVo = new UserVo();
         BeanUtils.copyProperties(userInfo,userVo);

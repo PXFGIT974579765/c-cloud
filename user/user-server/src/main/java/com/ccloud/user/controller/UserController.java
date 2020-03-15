@@ -81,6 +81,8 @@ public class UserController {
         // 5、登录成功将 token 放入header里
         HeaderUtil.set(response, HeaderConstant.TOKEN, newToken);
 
+        userVo.setToken(newToken);
+
         return ResultVOUtil.success(userVo);
     }
 
