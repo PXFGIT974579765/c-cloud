@@ -28,7 +28,7 @@ import java.util.Map;
  * @modified By：
  */
 @RestController
-@RequestMapping("/buyer/order")
+@RequestMapping("/buyer")
 @Slf4j
 public class OrderController {
 
@@ -69,7 +69,7 @@ public class OrderController {
         return ResultVOUtil.success(orderDTO.getOrderId());
     }
 
-    @GetMapping("/{userId}")
+    @GetMapping("list/{userId}")
     public ResultVo findByUserId(@PathVariable("userId") String userId) {
         return ResultVOUtil.success(orderService.findByUserId(userId));
     }

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1134ca7b-3da0-40d5-b614-9a62957e61f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/config/JmsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderMasterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/repository/OrderMasterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/ccloud/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/ccloud/product/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/config/JmsConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
     <ignored path="$PROJECT_DIR$/user/target/" />
@@ -92,11 +86,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            <state relative-caret-position="399">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -966,7 +969,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584284203783" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584285327064" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1101,12 +1104,12 @@
       <workItem from="1583932636191" duration="12020000" />
       <workItem from="1584016140510" duration="14167000" />
       <workItem from="1584104320805" duration="49591000" />
-      <workItem from="1584269206006" duration="4479000" />
+      <workItem from="1584269206006" duration="5419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80257000" />
+    <option name="totallyTimeSpent" value="81197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1933" height="1050" extended-state="0" />
@@ -1515,13 +1518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/ccloud/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1595,10 +1591,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/order/src/main/java/com/ccloud/order/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="399">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
